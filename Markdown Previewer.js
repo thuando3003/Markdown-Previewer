@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const editorContent = document.getElementById('editorContent');
     const previewerContent = document.getElementById('previewerContent');
     document.getElementById('editor').addEventListener('input', function() {
-        // Lấy nội dung từ phần editor
         const markdown = editorContent.innerText;
         previewerContent.innerHTML = convertMarkdownToHTML(markdown);
     });
