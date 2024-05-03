@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     editorContent.addEventListener("input", function() {
         const markdownText = editorContent.innerText;
-        const htmlText = marked(markdownText);
+
+        const htmlText = marked(markdownText, { breaks: true });
+
         previewerContent.innerHTML = htmlText;
     });
 });
