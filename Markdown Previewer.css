@@ -27,6 +27,7 @@ html, body {
   
   .previewer {
     overflow-y: auto; 
+    background-color: #f3f3f3;
   }
   
   #editorContent, #previewerContent {
